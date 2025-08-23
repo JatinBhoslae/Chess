@@ -1,0 +1,1108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="homestyle.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Background Slider -->
+    <div class="hero-slider-wrapper">
+      <div
+        class="slide active"
+        style="
+          background-image: url('https://templatekit.jegtheme.com/topchess/wp-content/uploads/sites/266/2022/04/playing-chess-top-view-of-young-thoughtful-men-in-full-suits-playing-chess-while-sitting-indoors-e1650331162406.jpg');
+        "
+      ></div>
+      <div
+        class="slide"
+        style="
+          background-image: url('https://templatekit.jegtheme.com/topchess/wp-content/uploads/sites/266/2022/04/man-playing-chess-e1650331219541.jpg');
+        "
+      ></div>
+      <div
+        class="slide"
+        style="
+          background-image: url('https://templatekit.jegtheme.com/topchess/wp-content/uploads/sites/266/2022/04/cropped-image-of-businessman-playing-chess-e1650341259995.jpg');
+        "
+      ></div>
+    </div>
+
+    <!--  Common Overlay Text -->
+    <div class="hero-text text-white container" style="width: 80%">
+      <h4 class="slide-in">Welcome to Topchess</h4>
+      <h1 class="display-4 slide-in fw-bold lead">
+        Make You Play Chess <br />
+        Like a <span>Grandmaster</span>
+      </h1>
+      <p class="header-text slide-in">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean <br />
+        commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
+        <br />
+        et magnis dis parturient montes.
+      </p>
+      <a href="#" class="btn btn-yellow mt-3 slide-out">Join Now</a>
+      <a href="#" class="btn mt-3 slide-out" style="color: #daa520"
+        >Learn More &nbsp;&nbsp;<i class="fa-solid fa-arrow-right"></i
+      ></a>
+    </div>
+
+    <!-- Navbar -->
+    <div class="navbar-container mx-auto fixed-top mt-4" style="width: 80%">
+      <nav class="navbar navbar-dark navbar-expand-lg px-2">
+        <div class="container-fluid">
+          <!-- Brand -->
+          <div class="navbar-brand d-flex align-items-center gap-2 bg-dark a1">
+            <img
+              src="https://templatekit.jegtheme.com/topchess/wp-content/uploads/sites/266/2022/04/Topchess-logo-white-3ZEA8H-1024x206.png"
+              alt="Logo"
+              class="img-fluid"
+            />
+          </div>
+
+          <!-- Toggler -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#mobileMenu"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Desktop Menu -->
+          <div class="d-none d-lg-flex justify-content-between w-100">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                  >Courses</a
+                >
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="course.html">Course</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Course Details</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                  >Pages</a
+                >
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Team</a></li>
+                  <li><a class="dropdown-item" href="#">FAQ</a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+            </ul>
+
+            <!-- Button -->
+            <a href="#" class="btn btn-yellow">Get Started</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Offcanvas Menu (Mobile Sidebar) -->
+    <div
+      class="offcanvas offcanvas-start text-bg-dark"
+      tabindex="-1"
+      id="mobileMenu"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title">Menu</h5>
+        <button
+          type="button"
+          class="btn-close btn-close-white"
+          data-bs-dismiss="offcanvas"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#">Courses</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Pages</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+          <li class="nav-item mt-3">
+            <a href="#" class="btn btn-yellow w-100">Get Started</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- cards best-course, top-coach, many-members -->
+    <div class="container my-5">
+      <div class="row g-4">
+        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+          <div class="card top shadow">
+            <img
+              src="./images/best-course.webp"
+              class="card-img-top rounded mx-auto d-block img-fluid mt-5"
+              alt="..."
+            />
+            <div class="card-body text-center">
+              <h2>Best Courses</h2>
+              <p class="card-text p-2">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                commodo ligula eget dolor. Aenean massa cum sociis natoque.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+          <div
+            class="card bottom shadow"
+            style="background-color: white; color: black"
+          >
+            <img
+              src="./images/top-coach.png"
+              class="card-img-top rounded mx-auto d-block img-fluid mt-5"
+              alt="..."
+            />
+            <div class="card-body text-center">
+              <h2>Top Coach</h2>
+              <p class="card-text p-2">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                commodo ligula eget dolor. Aenean massa cum sociis natoque.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+          <div class="card top shadow">
+            <img
+              src="./images/many-members.png"
+              class="card-img-top rounded mx-auto d-block img-fluid mt-5"
+              alt="..."
+            />
+            <div class="card-body text-center">
+              <h2>Many Members</h2>
+              <p class="card-text p-2">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                commodo ligula eget dolor. Aenean massa cum sociis natoque.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- About us -->
+    <div class="container-fluid my-5">
+      <div class="row align-items-center">
+        <!-- Image Column -->
+        <div class="col-lg-6 col-md-12 mb-4 mb-lg-0">
+          <img
+            src="./images/move3.jpg"
+            class="img-fluid"
+            alt="Chess Image"
+            style="height: 100%"
+          />
+        </div>
+
+        <!-- Text & Counters Column -->
+        <div class="col-lg-6 col-md-12">
+          <h3 class="text-warning ps-5 right">About Us</h3>
+          <h1 class="ps-5 pt-sm-1 right">
+            We Are Best Chess <br />
+            Club in Town
+          </h1>
+          <p class="text-muted ps-5 pt-sm-1 right">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. <br />
+            Aenean commodo ligula eget dolor.
+          </p>
+
+          <!-- Counters Row -->
+          <div class="row ps-5">
+            <div class="col-6 stat-card">
+              <h2 class="right">
+                <span class="counter" data-target="12">0</span>+
+              </h2>
+              <p class="right">Years Experienced</p>
+            </div>
+            <div class="col-6 stat-card">
+              <h2 class="right">
+                <span class="counter" data-target="125">0</span>+
+              </h2>
+              <p class="right">Outstanding Members</p>
+            </div>
+            <div class="col-12 pt-lg-2">
+              <button class="btn-yellow right1 mt-4">
+                <a class="about btn-yellow" href="about.html">About Us</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- members -->
+    <section class="stats-section text-white">
+      <div class="overlay"></div>
+      <div class="container position-relative py-5" style="top: 160px">
+        <div class="row g-0 shadow">
+          <!-- Card 1 -->
+          <div class="col-md-3 col-6 mt-5">
+            <div class="stat-card2 dark top">
+              <img
+                src="./images/earth-pepole-removebg-preview.png"
+                alt="Icon"
+                class="mb-2"
+                style="width: 20%"
+              />
+              <h2>
+                <span class="counter" data-target="567" style="color: white"
+                  >0</span
+                >+
+              </h2>
+              <p>Member Satisfaction</p>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="col-md-3 col-6 mt-5">
+            <div class="stat-card2 light bottom">
+              <img
+                src="./images/trophy-removebg-preview.png"
+                alt="Icon"
+                class="mb-2"
+                style="width: 20%"
+              />
+              <h2><span class="counter" data-target="129">0</span>+</h2>
+              <p>Winner Trophy</p>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="col-md-3 col-6 mt-4 mt-md-5">
+            <div class="stat-card2 dark top">
+              <img
+                src="./images/pepole-removebg-preview.png"
+                alt="Icon"
+                class="mb-2"
+                style="width: 20%"
+              />
+              <h2>
+                <span class="counter" data-target="100" style="color: white"
+                  >0</span
+                >+
+              </h2>
+              <p>Professional Team</p>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div class="col-md-3 col-6 mt-4 mt-md-5">
+            <div class="stat-card2 light bottom">
+              <img
+                src="./images/ok-removebg-preview.png"
+                alt="Icon"
+                class="mb-2"
+                style="width: 20%"
+              />
+              <h2><span class="counter" data-target="40">0</span>+</h2>
+              <p>Many Courses</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our courses -->
+    <div class="container text-center" style="margin-top: 210px">
+      <p class="our top2">Our Courses</p>
+      <h1 class="pt-2 top2">Best Courses And Learning</h1>
+      <p class="pt-4 desc2 top2">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. <br />
+        Aenean commodo ligula eget dolor.
+      </p>
+    </div>
+
+    <!-- Courses-cards -->
+    <div class="container" style="width: 80%">
+      <div class="row mt-5 g-4">
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="card3 bg-light shadow right2">
+            <img
+              class="course-img"
+              src="./images/small-child-playing-chess.jpg"
+              alt=""
+            />
+            <h2 class="text-dark ps-4 pt-3 fs-4 random">
+              Beginner Chess Course
+            </h2>
+            <div class="d-flex">
+              <i
+                class="fa-etch fa-solid fa-clock fa-lg ps-4 pt-3"
+                style="color: #daa520"
+              ></i>
+              <p class="text-secondary pt-1 ps-4">2 Hours / Meeting</p>
+
+              <p class="text-secondary pe-3 pt-1 ps-5">
+                <i
+                  class="fa-solid fa-medal fa-rotate-180 fa-lg"
+                  style="color: #daa520"
+                ></i>
+                Certification
+              </p>
+            </div>
+            <hr style="color: black" />
+            <div class="d-flex">
+              <p class="ps-4 pt-2 fs-5 text-dark">
+                4.9 &nbsp;
+                <span class="text-warning" style="font-size: 2vh">★★★★★</span>
+              </p>
+              <button
+                class="btn btn-yellow px-4 mb-3 btn-width"
+                style="width: 18vh; height: 7vh"
+              >
+                Join Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="card3 bg-dark shadow bottom">
+            <img
+              class="course-img"
+              src="./images/man-playing-chess.jpg"
+              alt=""
+            />
+            <h2 class="text-light ps-4 pt-3 fs-4">Intermediate Chess Course</h2>
+            <div class="d-flex">
+              <i
+                class="fa-etch fa-solid fa-clock fa-lg ps-4 pt-3"
+                style="color: #daa520"
+              ></i>
+              <p class="text-secondary pt-1 ps-4">5 Hours / Meeting</p>
+              <!-- <i class="fa-solid fa-medal fa-rotate-180 fa-lg  " style="color: #daa520;"></i> -->
+              <p class="text-secondary pe-3 pt-1 ps-5">
+                <i
+                  class="fa-solid fa-medal fa-rotate-180 fa-lg"
+                  style="color: #daa520"
+                ></i>
+                Certification
+              </p>
+            </div>
+            <hr style="color: white" />
+            <div class="d-flex">
+              <p class="ps-4 pt-2 fs-5 text-light">
+                4.9 &nbsp;
+                <span class="text-warning" style="font-size: 2vh">★★★★★</span>
+              </p>
+              <button
+                class="btn btn-yellow px-4 mb-3 btn-width"
+                style="width: 18vh; height: 7vh"
+              >
+                Join Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="card3 bg-light shadow left2">
+            <img class="course-img" src="./images/checkmate2.jpg" alt="" />
+            <h2 class="text-dark ps-4 pt-3 fs-4 random">Expert Chess Course</h2>
+            <div class="d-flex">
+              <i
+                class="fa-etch fa-solid fa-clock fa-lg ps-4 pt-3"
+                style="color: #daa520"
+              ></i>
+              <p class="text-secondary pt-1 ps-4">8 Hours / Meeting</p>
+              <!-- <i class="fa-solid fa-medal fa-rotate-180 fa-lg  " style="color: #daa520;"></i> -->
+              <p class="text-secondary pe-3 pt-1 ps-5">
+                <i
+                  class="fa-solid fa-medal fa-rotate-180 fa-lg"
+                  style="color: #daa520"
+                ></i>
+                Certification
+              </p>
+            </div>
+            <hr style="color: black" />
+            <div class="d-flex">
+              <p class="ps-4 pt-2 fs-5 text-dark">
+                4.9 &nbsp;
+                <span class="text-warning" style="font-size: 2vh">★★★★★</span>
+              </p>
+              <button
+                class="btn btn-yellow px-4 mb-3 btn-width"
+                style="width: 18vh; height: 7vh"
+              >
+                Join Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="course.html" class="text-dark text-decoration-none"
+        ><p class="text-center pt-4 text-secondary">
+          Visit More Courses Click Here &nbsp;<i
+            class="fa-solid fa-arrow-right"
+          ></i></p
+      ></a>
+    </div>
+
+    <!-- Why-Choose-Us -->
+    <div class="container" style="width: 80%; margin-top: 100px">
+      <div class="row">
+        <div class="col-lg-6 col-md-12">
+          <p class="text-warning fs-4 left2">Why Choose Us</p>
+          <h1 class="left2">
+            12 Years Of Experience in <br />
+            Chess Course
+          </h1>
+          <p class="pt-2 text-secondary left2">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+            <br />
+            commodo ligula eget dolor.
+          </p>
+
+          <!-- range -->
+          <div>
+            <div class="d-flex justify-content-between pt-3 left1">
+              <p class="text-dark">Best Chess Course</p>
+              <span class="me-3">95%</span>
+            </div>
+            <input
+              class="left1"
+              type="range"
+              min="0"
+              max="100"
+              value="95"
+              style="--val: 95%"
+              disabled
+            />
+            <div class="d-flex justify-content-between pt-3 left1">
+              <p class="text-dark">Expert Chess Course</p>
+              <span class="me-4">93%</span>
+            </div>
+            <input
+              class="left1"
+              type="range"
+              min="0"
+              max="100"
+              value="93"
+              style="--val: 93%"
+              disabled
+            />
+            <div class="d-flex justify-content-between pt-3 left1">
+              <p class="text-dark">Best Awards</p>
+              <span class="me-5">90%</span>
+            </div>
+            <input
+              class="left1"
+              type="range"
+              min="0"
+              max="100"
+              value="90"
+              style="--val: 90%"
+              disabled
+            />
+          </div>
+
+          <!-- viedo -->
+        </div>
+        <div class="col-lg-6 col-md-12">
+          <video
+            src="why-choose-us.mp4"
+            autoplay
+            loop
+            muted
+            playsinline
+            class="bg-viedo men-img lg-ms-5 mt-4"
+          ></video>
+          <!-- <div class="bg-dark text-light black-text" >
+            <p class="ps-4 pt-4">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean <br> commodo ligula eget dolor. Aenean massa. Cum sociis natoque <br> penatibus et magnis dis parturient montes.</p>
+            <p class="text-warning ps-4">John Martin</p>
+          </div> -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Testimonials Section -->
+    <div class="container" style="margin-top: 100px; width: 80%">
+      <section class="testimonial-section">
+        <div class="testimonial-overlay">
+          <p class="text-warning left2">Our Testimonials</p>
+          <h1 class="text-white mb-5 left2">What Are Students Saying</h1>
+          <div class="testimonial-slider">
+            <div class="testimonial-track">
+              <!-- Card 1 -->
+              <div class="testimonial-card right2">
+                <div class="testimonial-profile">
+                  <img src="./images/review3.jpg" alt="Profile" />
+                  <div>
+                    <h5>Kelly Fred</h5>
+                    <span class="text-warning">★★★★★</span><br />
+                    <small class="text-warning">Student</small>
+
+                    <p class="text-white">
+                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua."
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 2 -->
+              <div class="testimonial-card right2">
+                <div class="testimonial-profile">
+                  <img src="./images/review2.jpg" alt="Profile" />
+                  <div>
+                    <h5>Frederica Tan</h5>
+                    <span class="text-warning">★★★★★</span><br />
+                    <small class="text-warning">Student</small>
+                    <p class="text-white">
+                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua."
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 3 -->
+              <div class="testimonial-card">
+                <div class="testimonial-profile">
+                  <img src="./images/review4.jpg" alt="Profile" />
+                  <div>
+                    <h5>Frederica Tan</h5>
+                    <span class="text-warning">★★★★★</span><br />
+                    <small class="text-warning">Student</small>
+                    <p class="text-white">
+                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua."
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 4 -->
+              <div class="testimonial-card">
+                <div class="testimonial-profile">
+                  <img src="./images/review1.jpg" alt="Profile" />
+                  <div>
+                    <h5>Frederica Tan</h5>
+                    <span class="text-warning">★★★★★</span><br />
+                    <small class="text-warning">Student</small>
+                    <p class="text-white">
+                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua."
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Navigation -->
+          <button class="testimonial-prev">❮</button>
+          <button class="testimonial-next">❯</button>
+        </div>
+      </section>
+    </div>
+
+    <!-- 50% off offer -->
+    <div class="container-fluid text-white backgroundimage">
+      <h1 class="text-light right2">
+        Join Our Class This Year <br />
+        And Get <span class="text-warning">50%</span> Off !
+      </h1>
+      <p class="right2">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean <br />
+        commodo ligula eget dolor.
+      </p>
+      <button class="btn btn-yellow btn-2 right1">Join Now</button>
+    </div>
+
+    <!-- Our-Blog -->
+    <div class="container text-center" style="margin-top: 100px">
+      <p class="our top2">Our Blog</p>
+      <h1 class="pt-2 top2">Latest Article & Blog</h1>
+      <p class="pt-4 desc2 top2">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. <br />
+        Aenean commodo ligula eget dolor.
+      </p>
+    </div>
+
+    <!-- Blog-Post -->
+    <div class="container" style="width: 80%">
+      <!-- Card-1 -->
+      <div class="row mt-5 g-4">
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="card3 bg-dark shadow right2">
+            <img
+              class="course-img"
+              src="./images/Young-man-playing-chess.jpg"
+              alt=""
+            />
+            <h2 class="text-light ps-4 pt-3 fs-4">
+              The Cheapest Way To Earn <br />
+              Your Free Ticket To Chess
+            </h2>
+            <p class="text-secondary ps-4">
+              <i class="fa-solid fa-calendar-days"></i>&nbsp;April 21, 2022
+            </p>
+            <p class="ps-4 text-light">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+              commodo ligula eget dolor....
+            </p>
+            <hr style="color: white" />
+            <div class="d-flex">
+              <p class="ps-4 pt-1 text-warning">
+                Read More <i class="fa-solid fa-arrow-right"></i>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Card-2 -->
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="card3 bg-dark shadow bottom">
+            <img
+              class="course-img"
+              src="./images/little-boy.jpg"
+              alt=""
+            />
+            <h2 class="text-light ps-4 pt-3 fs-4">
+              7 Preparations You Should <br />
+              Make Before Using Chess
+            </h2>
+            <p class="text-secondary ps-4">
+              <i class="fa-solid fa-calendar-days"></i>&nbsp;April 21, 2022
+            </p>
+            <p class="ps-4 text-light">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+              commodo ligula eget dolor....
+            </p>
+            <hr style="color: white" />
+            <div class="d-flex">
+              <p class="ps-4 pt-1 text-warning">
+                Read More <i class="fa-solid fa-arrow-right"></i>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Card-3 -->
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="card3 bg-dark shadow left2">
+            <img class="course-img" src="./images/boyplayingchess.jpg" alt="" />
+            <h2 class="text-light ps-4 pt-3 fs-4">
+              This Is How Chess Will Look <br />
+              Like In 10 Years' Time
+            </h2>
+            <p class="text-secondary ps-4">
+              <i class="fa-solid fa-calendar-days"></i>&nbsp;April 21, 2022
+            </p>
+            <p class="ps-4 text-light">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+              commodo ligula eget dolor....
+            </p>
+            <hr style="color: white" />
+            <div class="d-flex">
+              <p class="ps-4 pt-1 text-warning">
+                Read More <i class="fa-solid fa-arrow-right"></i>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Insta-Profile -->
+    <div class="container text-center" style="margin-top: 100px">
+      <p class="our top2">
+        <a
+          target="_blank"
+          title="Click Here To Open Instagram Profile"
+          class="text-warning"
+          href="https://www.instagram.com/jatin_bhosale_96k?igsh=MWJjM25weDN5OHhkaA=="
+          >@Topchess_Official</a
+        >
+      </p>
+      <h1 class="pt-2 top2">Topchess On Instagram</h1>
+    </div>
+
+    <!-- Insta-Gallery -->
+    <div class="instagram-gallery">
+      <div class="row bottom">
+        <div class="col-lg-2 col-md-4 col-sm-6">
+          <div class="insta-item">
+            <a
+              target="_blank"
+              title="Click Here To Open This Post"
+              href="https://www.instagram.com/jatin_bhosale_96k?igsh=MWJjM25weDN5OHhkaA=="
+              ><img src="./images/father-boy.jpg" alt=""
+            /></a>
+            <div class="overlay">
+              <i class="fab fa-instagram"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-sm-6">
+          <div class="insta-item">
+            <a
+              target="_blank"
+              title="Click Here To Open This Post"
+              href="https://www.instagram.com/jatin_bhosale_96k?igsh=MWJjM25weDN5OHhkaA=="
+              ><img src="./images/man-playing-chess2.jpg" alt=""
+            /></a>
+            <div class="overlay">
+              <i class="fab fa-instagram"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-sm-6">
+          <div class="insta-item">
+            <a
+              target="_blank"
+              title="Click Here To Open This Post"
+              href="https://www.instagram.com/jatin_bhosale_96k?igsh=MWJjM25weDN5OHhkaA=="
+              ><img src="./images/Two-young-playing-chess.jpg" alt=""
+            /></a>
+            <div class="overlay">
+              <i class="fab fa-instagram"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-sm-6">
+          <div class="insta-item">
+            <a
+              target="_blank"
+              title="Click Here To Open This Post"
+              href="https://www.instagram.com/jatin_bhosale_96k?igsh=MWJjM25weDN5OHhkaA=="
+              ><img
+                src="./images/schoolchildren-playing-giant-chess.jpg"
+                alt=""
+            /></a>
+            <div class="overlay">
+              <i class="fab fa-instagram"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-sm-6">
+          <div class="insta-item">
+            <a
+              target="_blank"
+              title="Click Here To Open This Post"
+              href="https://www.instagram.com/jatin_bhosale_96k?igsh=MWJjM25weDN5OHhkaA=="
+              ><img src="./images/mensplayingchess.jpg" alt=""
+            /></a>
+            <div class="overlay">
+              <i class="fab fa-instagram"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-sm-6">
+          <div class="insta-item">
+            <a
+              target="_blank"
+              title="Click Here To Open This Post"
+              href="https://www.instagram.com/jatin_bhosale_96k?igsh=MWJjM25weDN5OHhkaA=="
+              ><img src="./images/proatrait1.jpg" alt=""
+            /></a>
+            <div class="overlay">
+              <i class="fab fa-instagram"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light pt-5 pb-4">
+      <div class="container">
+        <div class="row">
+          <!-- Left Column -->
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+            <h5 class="text-uppercase mb-3">
+              <img
+                src="./images/logo.png"
+                alt="Topchess Logo"
+                style="height: 30px"
+              />
+            </h5>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod.
+            </p>
+            <p><i class="bi bi-telephone-fill me-2"></i> (+91) 99 6791 4263</p>
+            <p><i class="bi bi-envelope-fill me-2"></i> topchess@domain.com</p>
+            <p>
+              <i class="bi bi-geo-alt-fill me-2"></i> Jl. Sunset Road No.99,
+              Uran
+            </p>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+            <h6 class="text-uppercase mb-3">Quick Links</h6>
+            <ul class="list-unstyled">
+              <li class="mb-3">
+                <a href="#" class="text-light text-decoration-none">Home</a>
+              </li>
+              <li class="mb-3">
+                <a href="#" class="text-light text-decoration-none">About Us</a>
+              </li>
+              <li class="mb-3">
+                <a href="#" class="text-light text-decoration-none">Courses</a>
+              </li>
+              <li class="mb-3">
+                <a href="#" class="text-light text-decoration-none">Coach</a>
+              </li>
+              <li class="mb-3">
+                <a href="#" class="text-light text-decoration-none">Contact</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Useful Links -->
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+            <h6 class="text-uppercase mb-3">Useful Links</h6>
+            <ul class="list-unstyled">
+              <li class="mb-3">
+                <a href="#" class="text-light text-decoration-none"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li class="mb-3">
+                <a href="#" class="text-light text-decoration-none"
+                  >Terms and Conditions</a
+                >
+              </li>
+              <li class="mb-3">
+                <a href="#" class="text-light text-decoration-none"
+                  >Disclaimer</a
+                >
+              </li>
+              <li class="mb-3">
+                <a href="#" class="text-light text-decoration-none">Support</a>
+              </li>
+              <li class="mb-3">
+                <a href="#" class="text-light text-decoration-none">FAQ</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Social Media and Newsletter -->
+          <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+            <h6 class="text-uppercase mb-3">Our Social Media</h6>
+            <div class="mb-3 d-flex align-items-center gap-2">
+              <button class="btn btn-warning" type="submit">
+                <a
+                  target="_blank"
+                  title="Click Here To Open Facebook"
+                  href="https://www.facebook.com/share/1AsqUrRnBg/"
+                  ><i
+                    class="fa-brands fa-facebook-f"
+                    style="width: 25px; color: black; font-size: 3vh"
+                  ></i
+                ></a>
+              </button>
+              <button class="btn btn-warning" type="submit">
+                <a
+                  target="_blank"
+                  title="Click Here To Open Twitter"
+                  href="https://x.com/jatinbhosale007?t=QX-ZIBtPqheFDfg5yJqhBg&s=09"
+                  ><i
+                    class="fa-brands fa-twitter"
+                    style="width: 25px; color: black; font-size: 3vh"
+                  ></i
+                ></a>
+              </button>
+              <button class="btn btn-warning" type="submit">
+                <a
+                  target="_blank"
+                  title="Click Here To Open Instagram"
+                  href="https://www.instagram.com/jatin_bhosale_96k?igsh=MWJjM25weDN5OHhkaA=="
+                  ><i
+                    class="fa-brands fa-instagram"
+                    style="width: 25px; color: black; font-size: 3vh"
+                  ></i
+                ></a>
+              </button>
+              <button class="btn btn-warning" type="submit">
+                <a
+                  target="_blank"
+                  title="Click Here To Open Youtube"
+                  href="https://youtube.com/@jatinbhosale181?si=21kv6JsyH2A1kmQz"
+                  ><i
+                    class="fa-brands fa-youtube"
+                    style="width: 25px; color: black; font-size: 3vh"
+                  ></i
+                ></a>
+              </button>
+            </div>
+
+            <h6 class="mb-2">Subscribe or Newsletter</h6>
+            <form class="d-flex">
+              <input
+                type="email"
+                class="form-control me-2"
+                placeholder="Your Email Address"
+                required
+              />
+              <button class="btn btn-warning" type="submit">
+                <i class="fa-brands fa-telegram fs-1"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <div class="text-center pt-3 border-top border-secondary mt-4">
+          <small>Topchess Template Kit by Jegtheme</small><br />
+          <small>&copy; 2025. All rights reserved.</small>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      // Background Zoom Slider
+      const slides = document.querySelectorAll(".slide");
+      let currentSlide = 0;
+
+      function showNextSlide() {
+        slides[currentSlide].classList.remove("active");
+        currentSlide = (currentSlide + 1) % slides.length;
+        slides[currentSlide].classList.add("active");
+      }
+
+      setInterval(showNextSlide, 7000);
+
+      // Scroll Navbar Color Change
+      const navbar = document.querySelector(".navbar");
+
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 50) {
+          navbar.classList.add("scrolled");
+        } else {
+          navbar.classList.remove("scrolled");
+        }
+      });
+
+      // Counter
+      const counters = document.querySelectorAll(".counter");
+      const options = {
+        threshold: 0.5,
+      };
+
+      const runCounter = (counter) => {
+        const updateCount = () => {
+          const target = +counter.getAttribute("data-target");
+          const count = +counter.innerText;
+          const increment = target / 100;
+
+          if (count < target) {
+            counter.innerText = Math.ceil(count + increment);
+            setTimeout(updateCount, 30);
+          } else {
+            counter.innerText = target;
+          }
+        };
+        updateCount();
+      };
+
+      const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            runCounter(entry.target);
+            observer.unobserve(entry.target);
+          }
+        });
+      }, options);
+
+      counters.forEach((counter) => observer.observe(counter));
+
+      const animatedElements = document.querySelectorAll(
+        ".top, .bottom, .right, .right1, .top2, .right2, .left1,  .left2"
+      );
+
+      const observer2 = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.style.animationPlayState = "running";
+              observer2.unobserve(entry.target); // Animate once
+            }
+          });
+        },
+        { threshold: 0.3 }
+      );
+
+      animatedElements.forEach((el) => observer2.observe(el));
+    </script>
+
+    <script>
+      const track = document.querySelector(".testimonial-track");
+      const cards = document.querySelectorAll(".testimonial-card");
+      const prev = document.querySelector(".testimonial-prev");
+      const next = document.querySelector(".testimonial-next");
+
+      let index = 0;
+
+      function updateSlider() {
+        const cardWidth = cards[0].offsetWidth + 32; // 32 = gap
+        track.style.transform = `translateX(-${index * cardWidth}px)`;
+      }
+
+      function nextSlide() {
+        index = (index + 1) % cards.length;
+        updateSlider();
+      }
+
+      function prevSlide() {
+        index = (index - 1 + cards.length) % cards.length;
+        updateSlider();
+      }
+
+      next.addEventListener("click", nextSlide);
+      prev.addEventListener("click", prevSlide);
+
+      setInterval(nextSlide, 5000); // Auto slide every 5s
+    </script>
+  </body>
+</html>

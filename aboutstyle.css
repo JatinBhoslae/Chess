@@ -1,0 +1,345 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Playfair Display', serif;
+    /* height: 200%; */
+}
+
+.hero-slider-wrapper {
+    height: 120vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transform: scale(1);
+    transform-origin: center center;
+    transition: opacity 1.5s ease-in-out, transform 10s ease-in-out;
+}
+
+.slide.active {
+    opacity: 1;
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+.slide::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    /* text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8); */
+}
+
+.navbar {
+    background: rgba(227, 227, 227, 0.311);
+    transition: background-color 0.5s ease;
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+    margin: 0 10px;
+}
+
+.navbar-nav .nav-link.active {
+    color: yellow !important;
+}
+
+.btn-yellow {
+    background-color: #d4af00;
+    color: black;
+    font-weight: bold;
+    border: none;
+    border-radius: 0%;
+    padding: 15px 0;
+    width: 150px;
+}
+
+.btn-yellow:hover {
+    color: #d4af00;
+    background-color: black;
+}
+.about{
+    padding: 15px 41px;
+    text-decoration: none;
+}
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #000;
+}
+
+.navbar.scrolled {
+    background-color: rgba(0, 0, 0, 0.9) !important;
+    transition: background-color 0.5s ease;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-brand img {
+    height: 65px;
+    padding: 16px;
+    width: 230px;
+}
+
+.offcanvas {
+    background-color: #222;
+}
+
+.offcanvas a {
+    color: white;
+}
+
+.offcanvas a:hover {
+    color: yellow;
+}
+
+@media (max-width: 485px) {
+    .a1 {
+        width: 180px;
+    }
+}
+
+.backgroundimage {
+    background-image: url(./images/chess-borad-4.jpeg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    width: 100%;
+    height: 60vh;
+    position: relative;
+}
+@media (max-width:1024px) {
+    .backgroundimage{
+        height: 50vh;
+    }
+}
+.backgroundimage h1{
+    text-align: center;
+    padding-top: 30vh;
+}
+.backgroundimage p{
+    text-align: center;
+    padding-top: 1%;
+}
+.card {
+    background-color: black;
+    /* width: 25rem; */
+    height: 23rem;
+    /* padding-bottom: 30px; */
+    color: white;
+    border: none;
+}
+
+.card-text {
+    color: gray;
+}
+
+.card-img-top {
+    width: 70px;
+    /* background-position: 100px; */
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 8px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 0;
+    height: 0;
+    background: transparent;
+    cursor: default;
+}
+
+input[type=range]::-moz-range-thumb {
+    width: 0;
+    height: 0;
+    background: transparent;
+    cursor: default;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    height: 8px;
+    border-radius: 5px;
+    background: linear-gradient(to right, goldenrod var(--val), #d3d3d3 var(--val));
+}
+
+.testimonial-box {
+    background-color: #111;
+    color: white;
+    padding: 1.5rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    position: relative;
+    margin-top: 2rem;
+}
+
+.testimonial-box p {
+    color: #aaa;
+    font-size: 0.9rem;
+}
+
+.testimonial-box .author {
+    color: goldenrod;
+    font-weight: 600;
+}
+
+.men-img {
+    height: 80%;
+    width: 100%;
+    /* margin-left: 10%; */
+    position: relative;
+    z-index: 10;
+}
+
+.coach-img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.name{
+    width: 90%;
+    margin-left: 5%;
+    position: absolute;
+    bottom: -10%;
+}
+.top {
+    animation: slideTop 1s ease-out;
+    animation-play-state: paused;
+    animation-delay: 0.1s;
+}
+.top2 {
+    animation: slideTop2 1s ease-out;
+    animation-play-state: paused;
+    animation-delay: 0.1s;
+}
+.bottom {
+    animation: slideInBottom 1s ease-out;
+    animation-play-state: paused;
+    animation-delay: 0.1s;
+}
+.right1 {
+    animation: slideright1 2s ease-out;
+    animation-play-state: paused;
+    animation-delay: 0.1s;
+}
+
+.right2 {
+    animation: slideright2 1s ease-out;
+    animation-play-state: paused;
+    animation-delay: 0.1s;
+}
+.left1 {
+    animation: slideleft2 2s ease-out;
+    animation-play-state: paused;
+    animation-delay: 0.1s;
+}
+
+.left2 {
+    animation: slideleft2 1s ease-out;
+    animation-play-state: paused;
+    animation-delay: 0.1s;
+}
+@keyframes slideTop {
+    0% {
+        transform: translateY(-50%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes slideTop2 {
+    0% {
+        transform: translateY(-300%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes slideInBottom {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes slideright1 {
+    0% {
+        transform: translateX(400%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideright2 {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes slideleft2 {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

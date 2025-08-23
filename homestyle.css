@@ -1,0 +1,688 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Playfair Display', serif;
+    /* height: 200%; */
+}
+
+/* Hero wrapper */
+.hero-slider-wrapper {
+    height: 120vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120vh;
+    /* full screen height */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transform: scale(1);
+    /* default scale */
+    transform-origin: center center;
+    /* important for zoom effect */
+    transition: opacity 1.5s ease-in-out, transform 10s ease-in-out;
+}
+
+.slide.active {
+    opacity: 1;
+    transform: scale(1.1);
+    /* zoom effect */
+    z-index: 1;
+}
+
+.slide::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    /* dark overlay */
+    z-index: 1;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    /* Higher than slide overlays */
+    /* text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8); */
+}
+
+.navbar {
+    background: rgba(227, 227, 227, 0.311);
+    transition: background-color 0.5s ease;
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+    margin: 0 10px;
+}
+
+.navbar-nav .nav-link.active {
+    color: yellow !important;
+}
+
+.btn-yellow {
+    background-color: #d4af00;
+    color: black;
+    font-weight: bold;
+    border: none;
+    border-radius: 0%;
+    padding: 15px 0;
+    width: 150px;
+}
+.btn-yellow:hover{
+    color:#d4af00 ;
+    background-color: black;
+}
+.about {
+    padding: 15px 41px;
+    text-decoration: none;
+}
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #000;
+    /* Optional background */
+}
+
+.navbar.scrolled {
+    background-color: rgba(0, 0, 0, 0.9) !important;
+    transition: background-color 0.5s ease;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-brand img {
+    height: 65px;
+    /* Adjust logo size within 100px container */
+    padding: 16px;
+    width: 230px;
+}
+
+.offcanvas {
+    background-color: #222;
+}
+
+.offcanvas a {
+    color: white;
+}
+
+.offcanvas a:hover {
+    color: yellow;
+}
+/* .nav-link:hover{
+    color: #d4af00;
+} */
+
+@media (max-width: 485px) {
+    .a1 {
+        width: 180px;
+    }
+}
+
+
+.header-text {
+    color: rgb(177, 176, 176);
+    font-family: baskerville old face;
+}
+.card{
+    background-color: black;
+    /* width: 25rem; */
+    height: 23rem;
+    padding-bottom: 30px;
+    color: white;
+    border: none;
+}
+.card-text{
+    color: gray;
+}
+.card-img-top{
+    width: 70px;
+    /* background-position: 100px; */
+}
+.stats {
+    display: flex;
+    gap: 3rem;
+    font-family: serif;
+    font-size: 2rem;
+    align-items: center;
+}
+
+.counter {
+    font-weight: bold;
+    font-size: 2.5rem;
+    color: #000; 
+}
+.stats-section {
+    position: relative;
+    background: url(./images/chess-board4.jpg) fixed;
+    /* background-size: 100% 100%; */
+    /* Your background image */
+    background-size: cover;
+    /* background-attachment: scroll; */
+    /* background-attachment: fixed; */
+    background-position: center;
+    /* transform: skewY(-3deg); */
+    z-index: 1;
+    margin-top: 100px;
+}
+
+
+.stat-card {
+    text-align: center;
+    /* padding: 2rem 1rem; */
+    min-height:100px;
+}
+.stat-card2 {
+    text-align: center;
+    padding: 2rem 1rem;
+    min-height: 200px;
+}
+
+.stat-card.dark {
+    background-color: #111;
+    color: white;
+}
+
+.stat-card.light {
+    background-color: white;
+    color: black;
+}
+.stat-card2.dark {
+    background-color: #111;
+    color: white;
+}
+
+.stat-card2.light {
+    background-color: white;
+    color: black;
+}
+
+.stat-card img {
+    width: 40px;
+    height: auto;
+    filter: brightness(0) saturate(100%) sepia(90%) hue-rotate(5deg);
+}
+
+.stat-card h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 10px 0;
+    color: goldenrod;
+}
+
+.stat-card p {
+    margin: 0;
+    font-weight: 500;
+}
+.our{
+    color: goldenrod;
+    font-size: 3vh;
+    font-family: "Cormorant Garamond,sans-serif";
+}
+.desc2{
+    color: gray;
+}
+.course-img{
+    width: 90%;
+        height: 90%;
+        margin-left: 5%;
+        margin-top: 5%;
+}
+.card3 {
+  
+    height: auto;
+  
+}
+@media (max-width:2561px) {
+    .btn-width{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+@media (max-width:1027px) {
+    .btn-width {
+        margin-left: 5%;
+        margin-right: 10%;
+    }
+}
+@media (max-width:769px) {
+    .btn-width {
+        margin-left: 10%;
+        margin-right: 5%;
+    }
+}
+@media (max-width:426px) {
+    .btn-width {
+        margin-left: 15%;
+        margin-right: 5%;
+    }
+}
+@media (max-width:321px) {
+    .btn-width {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+/* #range{
+    accent-color:goldenrod;
+} */
+
+input[type=range] {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 8px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 0;
+    height: 0;
+    background: transparent;
+    cursor: default;
+}
+
+input[type=range]::-moz-range-thumb {
+    width: 0;
+    height: 0;
+    background: transparent;
+    cursor: default;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    height: 8px;
+    border-radius: 5px;
+    background: linear-gradient(to right, goldenrod var(--val), #d3d3d3 var(--val));
+}
+.testimonial-box {
+    background-color: #111;
+    color: white;
+    padding: 1.5rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    position: relative;
+    margin-top: 2rem;
+}
+
+.testimonial-box p {
+    color: #aaa;
+    font-size: 0.9rem;
+}
+
+.testimonial-box .author {
+    color: goldenrod;
+    font-weight: 600;
+}
+ /* .black-text{
+    width:auto;
+    height:auto;
+    margin-left:15%;
+    border-left:5px solid goldenrod;
+    position: absolute;
+    left: 54%;
+    top: 10vh;
+    z-index: 20;
+} */
+    .men-img{
+    height: 80%;
+    width: 100%;
+    /* margin-left: 10%; */
+    position: relative;
+    z-index: 10;
+} 
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.slide-in {
+    animation: slideInLeft 1s ease-out; }
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+        }
+    
+        to {
+        transform: translateX(0);
+        opacity: 1;
+            }
+        }
+    
+.slide-out {
+    animation: slideInRight 1s ease-out; 
+}
+.top {
+    animation: slideTop 1s ease-out; 
+    animation-play-state: paused;
+    animation-delay: 0.1s;
+}
+.top2 {
+    animation: slideTop2 1s ease-out;
+    animation-play-state: paused; 
+     animation-delay: 0.1s;
+}
+.bottom {
+    animation: slideInBottom 1s ease-out;
+    animation-play-state: paused;
+    animation-delay: 0.1s;
+}
+.right {
+    animation: slideright 1s ease-out;
+    animation-play-state: paused;
+    animation-delay: 0.1s;
+}
+.right1 {
+    animation: slideright1 2s ease-out;
+    animation-play-state: paused;
+    animation-delay: 0.1s;
+}
+.right2 {
+    animation: slideright2 1s ease-out;
+    animation-play-state: paused;
+    animation-delay: 0.1s;
+}
+.left1 {
+    animation: slideleft2 2s ease-out;
+    animation-play-state: paused;
+    animation-delay: 0.1s;
+}
+.left2 {
+    animation: slideleft2 1s ease-out;
+    animation-play-state: paused;
+    animation-delay: 0.1s;
+}
+@keyframes slideTop {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes slideTop2 {
+    0% {
+        transform: translateY(-300%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes slideInBottom {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes slideright {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes slideright1 {
+    0% {
+        transform: translateX(400%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes slideright2 {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes slideleft2 {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.chess-thinking{
+    background-image: url(./images/women-playing-chess-3.jpeg);
+    width: 95%;
+    height: 80vh;
+    margin-left: 5%;
+    margin-top: 5%;
+    background-size: 100% 100%;
+   
+}
+@media (max-width:768px) {
+    .chess-thinking{
+        height: 70vh;
+    }
+}
+@media (max-width:426px) {
+    .chess-thinking {
+        height: 50vh;
+    }
+}
+
+.testimonial-section {
+    background: url('./images/women-playing-chess-3.jpeg') no-repeat center center/cover;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    overflow: hidden;
+}
+
+.testimonial-overlay {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 4rem 2rem;
+    text-align: center;
+    width: 90%;
+    max-width: 1200px;
+    position: relative;
+    border-radius: 20px;
+}
+
+.testimonial-slider {
+    overflow: hidden;
+    position: relative;
+}
+
+.testimonial-track {
+    display: flex;
+    gap: 2rem;
+    transition: transform 0.5s ease-in-out;
+}
+
+.testimonial-card {
+    min-width: 45%;
+    background-color: #111;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    text-align: left;
+}
+
+.testimonial-profile {
+    display: flex;
+    /* align-items: center; */
+    justify-content: flex-start;
+    /* align image and text left */
+    margin-top: 1.5rem;
+    gap: 1rem;
+    text-align: left; 
+}
+
+.testimonial-profile img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;     
+}
+
+.testimonial-profile h5,
+.testimonial-profile small {
+    margin: 0;
+    line-height: 1.2;           
+}
+
+.testimonial-prev,
+.testimonial-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #d4af00;
+    border: none;
+    color: black;
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.testimonial-prev {
+    left: 10px;
+}
+
+.testimonial-next {
+    right: 10px;
+}
+
+.backgroundimage{
+    background-image: url(./images/checkmate.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    margin-top: 100px;
+    width: 100%;
+    height: 65vh;
+    position: relative;
+}
+.backgroundimage h1{
+    padding-left: 50%;
+    padding-top: 6%;
+}
+.backgroundimage p{
+    color: rgb(138, 136, 136);
+    padding-left: 50%;
+    padding-top: 1%;
+}
+.btn-2{
+    margin-left: 50%;
+    margin-top: 1%;
+}
+.instagram-gallery {  
+    padding: 10px;
+    margin-top: 50px;
+}
+
+.insta-item {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    border-radius: 3px;
+    position: relative;
+}
+
+.insta-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.4s ease;
+}
+
+.insta-item img:hover {
+    transform: scale(1.1);
+}
+.overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(216, 155, 47, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    border-radius: 3px;
+}
+
+.overlay i {
+    color: white;
+    font-size: 2rem;
+}
+
+.insta-item:hover .overlay {
+    opacity: 1;
+ }
+
+ @media (max-width:1024px) {
+    .random{
+        word-spacing: 5px;
+    }
+ }
+
+ @media (max-width:768px) {
+     .random {
+         word-spacing: 10px;
+     }
+ }
